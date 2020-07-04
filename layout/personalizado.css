@@ -1,0 +1,470 @@
+/* utilize o arquivo css para personalizar o layout (alem do bootstrap)*/
+
+*{ /* essas estilizações serão aplicadas a todos os elementos do HTML */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: whitesmoke;
+    overflow-x:hidden;
+}
+
+.logo{
+    width:80%;
+    text-align: left;
+}
+
+.botao{
+    text-align: right;
+}
+
+header{
+    background-image: url(../img/fundo.jpg);
+    background-size: 150%;
+    background-position-x: -5.3em;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center; /* centralizando horizontalmente */
+    align-items: center; 
+    height: 23vh;
+}
+
+.logoheader{
+    width: 40%;
+    margin-bottom: 30vh;
+}
+
+section{
+    text-align: center;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.titulo-mvv{
+    margin-top:2vh;
+    margin-bottom: 2vh;
+    font-family: 'Laila', serif;
+}
+
+.fotoMissao, .fotoValores, .fotoVisao{
+    margin-top: 5vh;
+    width: 35%;
+}
+
+.fotoMissao{
+    transform: scale(0.6);
+    animation: linear 800ms animacaoTitulo forwards;
+}
+
+.fotoVisao{
+    transform: scale(0.6);
+    animation: linear 800ms 500ms animacaoTitulo forwards;
+}
+
+.fotoValores{
+    transform: scale(0.6);
+    animation: linear 800ms 1500ms animacaoTitulo forwards;
+}
+
+@keyframes animacaoTitulo{
+    0%{
+        
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.texto{
+    color: #595959;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#mvv .grid{
+    display:grid; /* utilizamos para fazer um número específico de colunas */
+    gap: 0; /* define o espaçamento entre cada coluna ou linha do grid */
+    grid-template-columns: 50vh; /* define a quantidade de colunas e a largura de cada uma delas, respectivamente*/
+    justify-content: center;
+}
+
+.fotos{
+    text-align: center;
+}
+
+.icons a{
+    color: black;
+    font-size: 3em;
+    text-align: center;
+    margin-left: -10px; 
+}		
+
+.titulo{
+    font-family: 'Bree Serif', serif;
+    font-size: 200%;
+}
+
+#contato a{
+    transition: text-shadow 300ms;
+}	
+
+#contato a:active, #contato a:hover{
+    text-shadow:#eee944 6px 6px 6px;
+    /*text-shadow:1px 1px 10px rgba(255, 255, 255, 0.5); /* 1º valor: movimentação no eixo x - 2º valor: movimentação no eixo y - 3º valor: quão borrada a sombra está - 4º valor: cor da sombra*/
+}
+
+#contato .icons{
+    text-align: center;
+}
+
+#contato .grid{
+    display:grid; /* utilizamos para fazer um número específico de colunas */
+    grid-template-columns: 11vh 11vh 11vh 11vh; /* define a quantidade de colunas e a largura de cada uma delas, respectivamente*/
+    justify-content: center;
+}
+
+.horizontal-timeline {
+    position: relative;
+    height: 1.5vh;
+    background: #eee944;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.arrow-down {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 2vw solid transparent;
+    border-right: 2vw solid transparent;
+    vertical-align: baseline;
+    bottom: -2vw;
+    border-top: 2vw solid #eee944;
+}
+
+.icon1{
+    position: absolute;
+    bottom: 2vh;
+    width: 4.5vh;
+    height: 4.5vh;
+    margin-top: -30px;
+}
+
+.descricao{
+    background-color: whitesmoke;
+    text-align: center;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 5px dotted #eee944;
+    
+}
+
+.descricao h5{
+    font-family: 'Laila', serif;
+}
+
+.descricao p{
+    color: #595959;
+}
+
+#ano1, #ano2, #ano3, #ano4{
+    margin-top: -4.5vh;
+}
+.horizontal-timeline .row{
+    text-align: center;
+}
+
+@media(min-width: 420px){
+    header{
+        background-size: 145%;
+        height: 24vh;
+    }
+}
+
+@media(min-width: 470px){
+    header{
+        background-size: 140%;
+        height: 25vh;
+    }
+}
+
+@media(min-width: 500px){
+    header{
+        background-size: 130%;
+        height: 26vh;
+    }
+    
+    .texto{
+        font-size:110%;
+    }
+    
+    .logo{
+        width: 70%;
+    }
+}
+
+@media(min-width: 540px){
+    header{
+        background-size: 120%;
+        height: 27vh;
+    }
+}
+
+@media(min-width: 580px){
+    header{
+        background-size: 110%;
+        background-position-x: 0;
+        height: 28vh;
+    }
+    
+    .icon1{
+        margin-left: 10px;
+    }
+}
+
+@media(min-width: 620px){
+    header{
+        background-size: 100%;
+        height: 29vh;
+    }
+    
+    .fotoMissao, .fotoValores, .fotoVisao{
+        width: 45%;
+    }
+    
+    .logo{
+        width:60%;
+    }
+}
+
+@media(min-width: 640px){
+    .navbar{
+        min-height: 9%;
+    }
+    
+    header{
+        height: 30vh;
+    }
+    
+    .logo{
+        width:50%;
+    }
+    
+    .descricao p{
+        font-size: 115%;
+    }
+}
+
+@media(min-width: 680px){
+    header{
+        background-position-y: -10px;
+        height: 31vh;
+    }
+    
+    .fotoMissao, .fotoValores, .fotoVisao{
+        width: 45%;
+    }
+}
+
+@media(min-width: 750px){
+    header{        
+        background-position-y: -20px;
+        height: 32vh;
+    }
+    
+    .navbar{
+        min-height: 8%;
+    }
+    
+    .logo{
+        width:55%;
+        
+    }
+}
+
+@media(min-width: 780px){
+    header{
+        background-size: 100%;
+        background-position-y: -30px;
+        height: 33vh;
+    }
+    
+    .logo{
+        width:47%;
+        
+    }
+    
+    .icon1{
+        margin-left: 22px;
+    }
+}
+
+@media(min-width: 810px){
+    header{
+        background-position-y: -40px;
+        height: 34vh;
+    }
+    
+    .icon1{
+        margin-left: 20px;
+        width: 6vh;
+        height: 6vh;
+    }
+}
+
+@media(min-width: 900px){
+    header{
+        height: 35vh;
+    }
+       
+    #mvv .grid{
+        display:grid; /* utilizamos para fazer um número específico de colunas */
+        gap: 3.5em; /* define o espaçamento entre cada coluna ou linha do grid */
+        grid-template-columns: 30vh 30vh 30vh; /* define a quantidade de colunas e a largura de cada uma delas, respectivamente*/
+    }
+    
+    .titulo{
+        font-size: 250%;
+    }
+    
+    .titulo-mvv{
+        font-size: 180%;
+    }
+    
+    .fotoMissao, .fotoValores, .fotoVisao{
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    
+    .icon1{
+        margin-left: 20px;
+    }
+    
+    p{
+        font-size:120%;
+    }
+}
+
+@media(min-width:992px){
+    .texto{
+        margin-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    nav{
+        max-width: 150vh;
+    }
+    
+    .nav-link{
+        font-size: 125%;
+    }
+    
+    .logo{
+        width:35%;
+    }
+    
+    .horizontal-timeline {
+        position: relative;
+        height: 2.5vh;
+        margin-top: 30px;
+    }
+    
+    .icon1{
+        margin-bottom: 10px;
+    }
+    
+    .a1, .a2, .a3, .a4{
+        margin-top: 10px;
+    }
+}
+
+@media(min-width:1200px){
+    nav{
+        max-width: 220vh;
+    }
+    
+    .nav-link{
+        font-size: 130%;
+    }
+    
+    .logo{
+        width:30%;
+    }
+    
+    header{
+        height: 50vh;
+    }
+    
+    .titulo-mvv{
+        font-size: 210%;
+    }
+    
+    .fotoMissao, .fotoValores, .fotoVisao{
+        width: 70%;
+        margin-bottom: 10px;
+    }
+    
+    #mvv .grid{
+        display:grid; /* utilizamos para fazer um número específico de colunas */
+        gap: 10em; /* define o espaçamento entre cada coluna ou linha do grid */
+        grid-template-columns: 35vh 35vh 35vh; /* define a quantidade de colunas e a largura de cada uma delas, respectivamente*/
+    }
+        
+    .horizontal-timeline {
+        position: relative;
+        height: 3vh;
+        margin-top: 30px;
+    }
+    
+    .icon1{
+        width: 8vh;
+        height: 8vh;
+        margin-bottom: 15px;
+        margin-left: 40px;
+    }
+    
+    .a1, .a2, .a3, .a4{
+        margin-top: 25px;
+    }
+    
+    .arrow-down {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 1.5vw solid transparent;
+        border-right: 1.5vw solid transparent;
+        vertical-align: baseline;
+        bottom: -1.5vw;
+        border-top: 1.5vw solid #eee944;
+    }
+    
+    .texto{
+        font-size: 130%;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+
+    .descricao h5{
+        font-size:130%;
+    }
+    
+    .descricao p{
+        font-size: 130%;
+    }
+    
+    .titulo{
+        font-size: 300%;
+        margin-bottom: 15px;
+    }
+    
+    #contato .grid{
+        font-size: 150%;
+        gap: 3em;
+    }
+}

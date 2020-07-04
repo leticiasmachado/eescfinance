@@ -1,0 +1,539 @@
+*{ /* essas estilizações serão aplicadas a todos os elementos do HTML */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    margin-bottom: 20px;
+    overflow-x: hidden;
+}
+
+.logo{
+    width:40%;
+    text-align: left;
+}
+
+.botao{
+    text-align: right;
+}
+
+.container-fora{
+    width: 100%;
+    height: 60vh;
+    background-color: transparent;
+}
+
+.containerTopo{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    min-width: 100%;
+    height: 100vh;
+    background-image: url(../img/fundo/niv-rozenberg-ySNtJhDX-cw.jpg);
+    background-repeat: no-repeat;
+    background-color: whitesmoke;
+    background-size: cover;
+    background-attachment: fixed;
+    background-origin: border-box;
+    background-position-y: -13em;
+}
+
+.iconMembros{
+    margin-top: 40px;
+    height: 3em;
+    width: 3em;
+}
+
+.textoMembros{
+    text-align: center;
+    color: black;
+    font-family: 'Laila', serif;
+}
+
+p{
+    margin-bottom: 0;
+    text-align: center;
+    color: #595959;
+    font-size: 110%;
+}
+
+.titulo-Sessao{
+    text-align: left;
+    text-decoration: underline;
+    font-family: 'Bree Serif', serif;
+    margin: 0.5em;
+}
+
+.gridP{
+    display:grid; /* utilizamos para fazer um número específico de colunas */
+    gap: 0.1em; /* define o espaçamento entre cada coluna ou linha do grid */
+    grid-template-columns: 25vh 25vh; /* define a quantidade de colunas e a largura de cada uma delas, respectivamente*/
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 1em;
+}
+
+.gridD{
+    display:grid; /* utilizamos para fazer um número específico de colunas */
+    gap: 0.1em; /* define o espaçamento entre cada coluna ou linha do grid */
+    grid-template-columns: 25vh 25vh; /* define a quantidade de colunas e a largura de cada uma delas, respectivamente*/
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 1em;
+}
+
+.gridC{
+    display:grid; /* utilizamos para fazer um número específico de colunas */
+    gap: 0.1em; /* define o espaçamento entre cada coluna ou linha do grid */
+    grid-template-columns: 25vh 25vh; /* define a quantidade de colunas e a largura de cada uma delas, respectivamente*/
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 1em;
+}
+
+.gridS{
+    display:grid; /* utilizamos para fazer um número específico de colunas */
+    gap: 0.1em; /* define o espaçamento entre cada coluna ou linha do grid */
+    grid-template-columns: 25vh 25vh; /* define a quantidade de colunas e a largura de cada uma delas, respectivamente*/
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 1em;
+}
+
+.gridJ{
+    display:grid; /* utilizamos para fazer um número específico de colunas */
+    gap: 0.1em; /* define o espaçamento entre cada coluna ou linha do grid */
+    grid-template-columns: 25vh 25vh; /* define a quantidade de colunas e a largura de cada uma delas, respectivamente*/
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+.imagemP{
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    object-position: 0px -10px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.imagemD{
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    object-position: 0px -10px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.imagemC{
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    object-position: 0px -10px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.imagemS{
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    object-position: 0px -10px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.imagemSemCorteS{
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.imagemLadoDireitoS{
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    object-position: -55px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.imagemJ{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    object-position: 0px -10px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.imagemSemCorteJ{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.imagemLadoDireitoJ{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    object-position: -55px;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.icons i{
+    color: black;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.footer p{
+    text-align: left;
+    color: #dcdcdc;
+    font-size: 1rem;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+@media(min-width: 440px){
+    .logo{
+        width: 100%;
+    }
+}
+
+@media(min-width: 500px){
+    .logo{
+        width: 80%;
+    }
+}
+
+@media(min-width: 570px){
+    .logo{
+        width: 65%;
+    }
+    
+    p{
+        font-size: 110%;
+    }
+}
+
+@media(min-width: 660px){
+    .gridC{
+        gap: 4em; /* define o espaçamento entre cada coluna ou linha do grid */
+        grid-template-columns: 12vh 15vh 12vh 15vh; /* define a quantidade de colunas e a largura de cada uma delas, respectivamente*/
+        font-size: 1em;
+    }
+    
+    .gridS{    
+        gap: 4em; /* define o espaçamento entre cada coluna ou linha do grid */
+        grid-template-columns: 12vh 15vh 12vh 15vh; /* define a quantidade de colunas e a largura de cada uma delas, respectivamente*/
+        font-size: 1em;
+    }
+    
+    .imagemS{
+        width: 150px;
+        height: 150px;
+    }
+
+    .imagemSemCorteS{
+        width: 150px;
+        height: 150px;
+    }
+
+    .imagemLadoDireitoS{
+        width: 150px;
+        height: 150px;        
+    }
+    
+    .gridJ{
+        gap: 2.5em; /* define o espaçamento entre cada coluna ou linha do grid */
+        grid-template-columns: 22vh 22vh 22vh; /* define a quantidade de colunas e a largura de cada uma delas, respectivamente*/
+        font-size: 0.9em;
+    }
+    
+    .imagemC{
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media(min-width: 768px){    
+    .iconMembros{
+        margin-top: 20px;
+    }
+    
+    .logo{
+        width: 50%;
+    }
+    
+    .gridJ{
+        gap: 4em;
+        grid-template-columns: 25vh 25vh 25vh; /* define a quantidade de colunas e a largura de cada uma delas, respectivamente*/
+        font-size:1em;
+    }
+    
+    .imagemP{
+        width: 190px;
+        height: 190px;
+    }
+
+    .imagemD{
+        width: 190px;
+        height: 190px;
+    }
+}
+
+@media(min-width: 868px){
+    .gridP{
+        gap: 0.1em; /* define o espaçamento entre cada coluna ou linha do grid */
+        grid-template-columns: 30vh 30vh; /* define a quantidade de colunas e a largura de cada uma delas, respectivamente*/
+        font-size: 1.2em;
+    }
+
+    .gridD{
+        gap: 0.1em; /* define o espaçamento entre cada coluna ou linha do grid */
+        grid-template-columns: 30vh 30vh; /* define a quantidade de colunas e a largura de cada uma delas, respectivamente*/
+        font-size: 1.2em;
+    }
+    
+    .gridC{
+        gap: 4em; /* define o espaçamento entre cada coluna ou linha do grid */
+        grid-template-columns: 12vh 15vh 12vh 15vh; /* define a quantidade de colunas e a largura de cada uma delas, respectivamente*/
+        font-size: 1.05em;
+    }
+}
+
+@media(min-width:992px){
+    nav{
+        max-width: 150vh;
+    }
+    
+    .nav-link{
+        font-size: 125%;
+    }
+    
+    .logo{
+        width: 40%;
+    }
+    
+    .iconMembros{
+        margin-top: 40px;
+        height: 3.6em;
+        width: 3.6em;
+    }
+
+    .textoMembros{
+        font-size: 3.6em;
+    }
+    
+    p{
+        margin-left: 30px;
+        margin-right: 30px;
+        font-size: 130%;
+    }
+    
+    section h2{
+        font-size: 300%;
+    }
+    
+    footer{
+        height: 12vh;
+    }
+    
+    footer p{
+        font-size: 100%;
+    }
+    
+    .gridP{
+        gap: 0.1em; /* define o espaçamento entre cada coluna ou linha do grid */
+        grid-template-columns: 35vh 35vh; /* define a quantidade de colunas e a largura de cada uma delas, respectivamente*/
+        font-size: 1.2em;
+    }
+    
+    .imagemP{
+        width: 210px;
+        height: 210px;
+    }
+
+    .gridD{
+        gap: 0.1em; /* define o espaçamento entre cada coluna ou linha do grid */
+        grid-template-columns: 30vh 30vh 30vh 30vh; /* define a quantidade de colunas e a largura de cada uma delas, respectivamente*/
+        font-size: 1em;
+    }
+    
+    .imagemD{
+        width: 170px;
+        height: 170px;
+    }
+
+    .gridC{
+        gap: 0.1em; /* define o espaçamento entre cada coluna ou linha do grid */
+        grid-template-columns: 30vh 30vh 30vh 30vh; /* define a quantidade de colunas e a largura de cada uma delas, respectivamente*/
+        font-size: 1em;
+    }
+    
+    .imagemC{
+        width: 170px;
+        height: 170px;
+    }
+    
+    .gridS{
+        gap: 0.1em; /* define o espaçamento entre cada coluna ou linha do grid */
+        grid-template-columns: 30vh 30vh 30vh 30vh; /* define a quantidade de colunas e a largura de cada uma delas, respectivamente*/
+        font-size: 1em;
+    }
+
+    .imagemS, .imagemLadoDireitoS, .imagemSemCorteS{
+        width: 170px;
+        height: 170px;
+    }
+    
+    .gridJ{
+        gap: 0.5em; /* define o espaçamento entre cada coluna ou linha do grid */
+        grid-template-columns: 35vh 35vh 35vh 35vh; /* define a quantidade de colunas e a largura de cada uma delas, respectivamente*/
+        font-size: 0.9em;
+    }
+    
+    .imagemJ, .imagemLadoDireitoJ, .imagemSemCorteJ{
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media(min-width:1110px){
+    nav{
+        max-width: 220vh;
+    }
+    
+    .nav-link{
+        font-size: 130%;
+    }
+    
+    .logo{
+        width:30%;
+    }
+    
+    .container-fora{
+        height: 65vh;
+    }
+    
+    footer{
+        height: 13vh;
+    }
+    
+    .gridD{
+        gap: 0; /* define o espaçamento entre cada coluna ou linha do grid */
+        grid-template-columns: 18vh 30vh 18vh 30vh 18vh 30vh; /* define a quantidade de colunas e a largura de cada uma delas, respectivamente*/
+        font-size: 0.9em;
+    }
+    
+    .imagemD{
+        width: 160px;
+        height: 160px;
+    }
+
+    .gridC{
+        gap: 0.1em; /* define o espaçamento entre cada coluna ou linha do grid */
+        grid-template-columns: 30vh 30vh 30vh 30vh; /* define a quantidade de colunas e a largura de cada uma delas, respectivamente*/
+        font-size: 1em;
+    }
+    
+    .imagemC{
+        width: 170px;
+        height: 170px;
+    }
+    
+    .gridS{
+        gap: 0.1em; /* define o espaçamento entre cada coluna ou linha do grid */
+        grid-template-columns: 30vh 30vh 30vh 30vh; /* define a quantidade de colunas e a largura de cada uma delas, respectivamente*/
+        font-size: 1em;
+    }
+
+    .imagemS, .imagemLadoDireitoS, .imagemSemCorteS{
+        width: 170px;
+        height: 170px;
+    }
+    
+    .gridJ{
+        gap: 2em; /* define o espaçamento entre cada coluna ou linha do grid */
+        grid-template-columns: 30vh 30vh 30vh 30vh; /* define a quantidade de colunas e a largura de cada uma delas, respectivamente*/
+        font-size: 1em;
+    }
+    
+    .imagemJ, .imagemLadoDireitoJ, .imagemSemCorteJ{
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media(min-width: 1268px){
+    .titulo-Sessao{
+       font-size: 220%;
+    }
+    
+    .gridP{
+        gap: 0.1em; /* define o espaçamento entre cada coluna ou linha do grid */
+        grid-template-columns: 40vh 40vh; /* define a quantidade de colunas e a largura de cada uma delas, respectivamente*/
+        font-size: 1.3em;
+    }
+    
+    .imagemP{
+        width: 250px;
+        height: 250px;
+    }
+    
+    .gridD{
+        gap: 1em; /* define o espaçamento entre cada coluna ou linha do grid */
+        grid-template-columns: 24vh 41vh 24vh 41vh 24vh 41vh; /* define a quantidade de colunas e a largura de cada uma delas, respectivamente*/
+        font-size: 1em;
+    }
+    
+    .imagemD{
+        width: 200px;
+        height: 200px;
+    }
+
+    .gridC{
+        gap: 0.5em; /* define o espaçamento entre cada coluna ou linha do grid */
+        grid-template-columns: 20vh 30vh 20vh 30vh 20vh 30vh 20vh 30vh; /* define a quantidade de colunas e a largura de cada uma delas, respectivamente*/
+        font-size: 0.9em;
+    }
+    
+    .imagemC{
+        width: 170px;
+        height: 170px;
+    }
+    
+    .gridS{
+        gap: 0.3em; /* define o espaçamento entre cada coluna ou linha do grid */
+        grid-template-columns: 20vh 31vh 20vh 31vh 20vh 31vh 20vh 31vh; /* define a quantidade de colunas e a largura de cada uma delas, respectivamente*/
+        font-size: 0.9em;
+    }
+
+    .imagemS, .imagemLadoDireitoS, .imagemSemCorteS{
+        width: 160px;
+        height: 160px;
+    }
+    
+    .gridJ{
+        gap: 2em; /* define o espaçamento entre cada coluna ou linha do grid */
+        grid-template-columns: 38vh 38vh 38vh 38vh 38vh; /* define a quantidade de colunas e a largura de cada uma delas, respectivamente*/
+        font-size: 0.9em;
+    }
+    
+    .imagemJ, .imagemLadoDireitoJ, .imagemSemCorteJ{
+        width: 160px;
+        height: 160px;
+    }
+    
+    .icons{
+        font-size: 115%;
+    }
+}
